@@ -1,0 +1,16 @@
+@import 'normalize';
+@import 'typography';
+
+img {
+	max-width: 100%;
+}
+
+body {
+	color: #3333;
+}
+
+.wrapper {
+	max-width: 1060px;
+	width: 80%;
+	margin: 0 auto;
+}

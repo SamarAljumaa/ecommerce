@@ -1,0 +1,19 @@
+a {
+	color: #BA209B;
+	text-decoration: none;
+	&:hover {
+		color: #D424B1;
+	}
+}
+
+/* paragraphs */
+
+p {
+	line-height: 1.5;
+}
+
+/*lists*/
+
+ul li, ol li {
+	padding: 3px;
+}
