@@ -29,14 +29,14 @@ gulp.task('scripts', () => {
 
 gulp.task('browser-sync', () => {
 	browserSync.init({
-		server: './'
+		server: './public'
 		})
 });
 
 gulp.task('watch', () => {
 	gulp.watch('./dev/styles/**/*.scss', ['styles']);
 	gulp.watch('./dev/scripts/*.js', ['scripts']);
-	gulp.watch('./*.html', reload);
+	gulp.watch('./public/*.html', reload);
 	});
 
 gulp.task('default', ['browser-sync', 'styles', 'scripts', 'watch']);
