@@ -11,7 +11,7 @@
 	<!-- beginning of header -->
 	<!-- Sticky Nav -->
 	<header>
-		<nav>
+		<nav class="clearfix">
 			<!-- left floated Nav -->
 			<div class="leftNav">
 				<ul>
@@ -31,7 +31,7 @@
 		</nav>
 		<div class="wrapper">
 			<!-- second Nav -->
-			<nav class="secondNav">
+			<nav class="secondNav clearfix">
 				<div class="logo">
 					<img src="Images/delphinus-logo.png" alt="">
 				</div>
@@ -54,7 +54,7 @@
 	<!-- Beginning of second header -->
 	<section class="secondHeader">
 		<div class="wrapper">
-			<ul>
+			<ul class="clearfix">
 				<li>Home / Contact Us</li>
 				<li>Contact Us</li>
 			</ul>
@@ -74,7 +74,7 @@
 						<li>121 King Street, Melbourne</li>
 						<li>Victoria 3000 Australia</li>
 						<li>
-							<ul>
+							<ul class="clearfix">
 								<li><i class="fa fa-facebook"></i></li>
 								<li><i class="fa fa-twitter"></i></li>
 								<li><i class="fa fa-instagram"></i></li>
@@ -85,7 +85,7 @@
 				</div>
 				<div class="theForms">
 					<h3>We would love to hear from you</h3>
-					<form action="text">
+					<form action="text" class="clearfix">
 						<input type="text" name="name" value="Your Name">
 						<input type="email" name="email" value="Your email">
 						<input type="text" name="website" value="Your website">
@@ -100,12 +100,14 @@
 	<!-- End of contact form section -->
 	<!-- beginning of footer section  -->
 	<footer>
-		<div class="wrapper">
-			<div class="shippingLinks">
-				<a href=""><button>Free Shipping</button></a>
-				<a href=""><button>Free Return</button></a>
-			</div>
-			<div class="footerTags">
+		<div class="shippingLinks clearfix">
+			<div class="wrapper">
+					<a href=""><button>Free Shipping</button></a>
+					<a href=""><button>Free Return</button></a>
+			</div>		
+		</div>
+		<div class="footerTags">
+			<div class="wrapper">
 				<div class="list list1">
 					<h3>Information</h3>
 					<ul>
@@ -144,7 +146,9 @@
 					</ul>
 				</div>
 			</div>
-			<div class="social">
+		</div>
+		<div class="social">
+			<div class="wrapper">
 				<ul class="socialIcons">
 					<li><i class="fa fa-facebook"></i></li>
 					<li><i class="fa fa-twitter"></i></li>
@@ -154,10 +158,15 @@
 				<ul class="signup">
 					<li>Newsletters</li>
 					<!-- put arrow in after element in css -->
-					<li><form action=""><input type="email" name="email" value="Enter your email address"></form></li>
+					<li><form action=""><input type="email" name="email" value="Enter your email address &#xf178;"></form></li>
 				</ul>
 			</div>
 		</div>
+		<div class="copyright">
+			<div class="wrapper">
+				<p>&copy; 2015 Delphinus</p>	
+			</div>
+		</div>	
 	</footer>
 	<!-- End of footer section  -->
 

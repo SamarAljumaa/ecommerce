@@ -1,0 +1,119 @@
+.secondHeader {
+	background-color: #F5F6F7;
+	padding: 40px 0;
+	.wrapper {
+		ul {
+			padding-left: 0;
+			li:first-child {
+				float: left;
+				@include rtl() {
+			  	float: right;
+			  }
+			}
+			li:last-child {
+				float: right;
+				text-transform: uppercase;
+				font-weight: bold;
+				font-size: 1.8rem;
+				@include rtl() {
+			  	float: left;
+			  }
+			}
+		}
+	}
+}
+.contactForm {
+	margin-top: 5%;
+	.wrapper {
+		.contactImage {
+			width: 100%;
+		}
+		.contactInfo {
+			padding: 50px 0;
+			display: flex;
+			flex-direction: row;
+			@include rtl() {
+				flex-direction: row-reverse;
+			}
+			.address {
+				width: 25%;
+				padding: 50px 25px;
+				background-color: #F5F6F7;
+				@include rtl() {
+					text-align: right;
+				}
+			 	ul {
+			 		margin: 0;
+			 		padding-left: 0;
+			 		li {
+			 			line-height: 3rem;
+			 			ul {
+			 				padding-top: 25px;
+			 				margin: 0;
+			 				padding-left: 0;
+			 				li {
+			 					float: left;
+			 					width: 25%;
+		 						@include rtl() {
+		 					  	float: right;
+		 					  }
+			 				}
+			 			}
+			 		}
+			 	}
+			}
+			.theForms {
+				width: 70%;
+		    margin-left: 3%;
+		    h3 {
+		    	text-transform: uppercase;
+		    	margin-bottom: 3%;
+		    }
+				@include rtl() {
+					text-align: right;
+					margin-left: 0;
+					margin-right: 3%;
+				}
+				form {
+					width: 100%;
+					input[type="text"] , input[type="email"] {
+						padding: 20px 10px;
+					  border: none;
+					  border-bottom: solid 1px #c9c9c9;
+					  margin-bottom: 3.5%;
+					  @include rtl() {
+					  	text-align: center;
+					  	// margin-left: 0;
+					  	// margin-right: 3%;
+					  }
+					}
+					input[name="name"], input[name="email"], input[name="website"] {
+						float: left;
+						width: 30%;
+						@include rtl() {
+					  	float: right;
+					  }
+					}
+					input[name="email"] {
+						margin: 0 3%;
+					}
+					input[name="title"] , input[name="review"] {
+						width: 100%;
+					}
+					input[type="submit"] {
+						border: 2px solid black;
+				    font-size: 1.4rem;
+				    background-color: white;
+				    text-transform: uppercase;
+				    padding: 10px 75px;
+				    transition: .25s all;
+					}
+					input[type="submit"]:hover {
+						background-color: black;
+						color: white;
+					}
+				}
+			}
+		}	
+	}
+}

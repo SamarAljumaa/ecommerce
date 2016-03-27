@@ -1,3 +1,120 @@
 footer {
-	
+	.shippingLinks{
+		background-color: #F5F6F7; 
+	}
+	.wrapper {
+		width: 100%;
+		padding: 25px 0px;
+		width: 100%;
+    margin: 0 auto;
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: center;
+    flex-flow: row wrap;
+		a {
+			width: 35%;
+	    margin: 3%;
+	    display: block;
+			button {
+				width: 100%;
+				background-color: #FEFFFF;
+				padding: 25px 50px;
+				font-size: 2.2rem;
+				border: 0;
+		    box-shadow: 2px 2px 2px lightgrey;
+			}
+		}
+	}
+	.footerTags {
+		background-color: #FEFFFF;
+		@include rtl() {
+			text-align: right;
+		}
+		.wrapper {
+			width: 100%;
+			display: flex;
+			flex-flow: row wrap;
+			justify-content: space-around;
+			.list {
+				width: 25%;
+				h3 {
+					text-transform: uppercase;
+					padding-bottom: 15px;
+				}
+				ul {
+					margin: 0;
+					padding-left: 0;
+					li {
+						padding-bottom: 10px;	
+					}
+				}
+			}
+		}
+	}
+	.social {
+		background-color: #F5F6F7; 
+		.wrapper {
+			justify-content: space-around;
+			align-items: center;
+			@include rtl() {
+				flex-direction: row-reverse;
+				// flex-wrap: wrap-reverse;
+			}
+			.socialIcons , .signup {
+				margin: 0;
+				padding-left: 0;
+			}
+			.socialIcons {
+				width: 20%;
+				li {
+					width: 25%;
+			    float: left;
+			    text-align: center;
+			    i {
+
+			    }
+				}
+			}
+			.signup {
+				width: 75%;
+				li {
+					float: left;
+					text-transform: uppercase;
+					letter-spacing: 0.2rem;
+					@include rtl() {
+						letter-spacing: normal;
+						float: right;
+					}
+					form {
+						input {
+							font-family: 'FontAwesome', 'Open Sans';
+							padding: 10px;
+							width: 100%;
+							@include rtl() {
+								text-align: center;
+							}
+						}
+					}
+				}
+				li:first-child {
+					letter-spacing: 0.2rem;
+			    align-items: center;
+			    width: 30%;
+			    text-align: center;
+			    padding: 12px 0;
+				}
+				li:last-child {
+					width: 70%;
+				}
+			}
+		}
+	}
+	.copyright {
+		.wrapper{
+			padding: 0;
+		}
+		p {
+			font-size: 1.2rem;
+		}
+	}
 }

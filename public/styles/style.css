@@ -266,6 +266,210 @@ header .secondNav {
 .productGallery1 .wrapper .blockTitle5 {
   background-color: #BCE5D4; }
 
+.secondHeader {
+  background-color: #F5F6F7;
+  padding: 40px 0; }
+  .secondHeader .wrapper ul {
+    padding-left: 0; }
+    .secondHeader .wrapper ul li:first-child {
+      float: left; }
+      html[lang=ar] .secondHeader .wrapper ul li:first-child {
+        float: right; }
+    .secondHeader .wrapper ul li:last-child {
+      float: right;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 1.8rem; }
+      html[lang=ar] .secondHeader .wrapper ul li:last-child {
+        float: left; }
+
+.contactForm {
+  margin-top: 5%; }
+  .contactForm .wrapper .contactImage {
+    width: 100%; }
+  .contactForm .wrapper .contactInfo {
+    padding: 50px 0;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+            flex-direction: row; }
+    html[lang=ar] .contactForm .wrapper .contactInfo {
+      -webkit-flex-direction: row-reverse;
+          -ms-flex-direction: row-reverse;
+              flex-direction: row-reverse; }
+    .contactForm .wrapper .contactInfo .address {
+      width: 25%;
+      padding: 50px 25px;
+      background-color: #F5F6F7; }
+      html[lang=ar] .contactForm .wrapper .contactInfo .address {
+        text-align: right; }
+      .contactForm .wrapper .contactInfo .address ul {
+        margin: 0;
+        padding-left: 0; }
+        .contactForm .wrapper .contactInfo .address ul li {
+          line-height: 3rem; }
+          .contactForm .wrapper .contactInfo .address ul li ul {
+            padding-top: 25px;
+            margin: 0;
+            padding-left: 0; }
+            .contactForm .wrapper .contactInfo .address ul li ul li {
+              float: left;
+              width: 25%; }
+              html[lang=ar] .contactForm .wrapper .contactInfo .address ul li ul li {
+                float: right; }
+    .contactForm .wrapper .contactInfo .theForms {
+      width: 70%;
+      margin-left: 3%; }
+      .contactForm .wrapper .contactInfo .theForms h3 {
+        text-transform: uppercase;
+        margin-bottom: 3%; }
+      html[lang=ar] .contactForm .wrapper .contactInfo .theForms {
+        text-align: right;
+        margin-left: 0;
+        margin-right: 3%; }
+      .contactForm .wrapper .contactInfo .theForms form {
+        width: 100%; }
+        .contactForm .wrapper .contactInfo .theForms form input[type="text"], .contactForm .wrapper .contactInfo .theForms form input[type="email"] {
+          padding: 20px 10px;
+          border: none;
+          border-bottom: solid 1px #c9c9c9;
+          margin-bottom: 3.5%; }
+          html[lang=ar] .contactForm .wrapper .contactInfo .theForms form input[type="text"], html[lang=ar] .contactForm .wrapper .contactInfo .theForms form input[type="email"] {
+            text-align: center; }
+        .contactForm .wrapper .contactInfo .theForms form input[name="name"], .contactForm .wrapper .contactInfo .theForms form input[name="email"], .contactForm .wrapper .contactInfo .theForms form input[name="website"] {
+          float: left;
+          width: 30%; }
+          html[lang=ar] .contactForm .wrapper .contactInfo .theForms form input[name="name"], html[lang=ar] .contactForm .wrapper .contactInfo .theForms form input[name="email"], html[lang=ar] .contactForm .wrapper .contactInfo .theForms form input[name="website"] {
+            float: right; }
+        .contactForm .wrapper .contactInfo .theForms form input[name="email"] {
+          margin: 0 3%; }
+        .contactForm .wrapper .contactInfo .theForms form input[name="title"], .contactForm .wrapper .contactInfo .theForms form input[name="review"] {
+          width: 100%; }
+        .contactForm .wrapper .contactInfo .theForms form input[type="submit"] {
+          border: 2px solid black;
+          font-size: 1.4rem;
+          background-color: white;
+          text-transform: uppercase;
+          padding: 10px 75px;
+          transition: .25s all; }
+        .contactForm .wrapper .contactInfo .theForms form input[type="submit"]:hover {
+          background-color: black;
+          color: white; }
+
+footer .shippingLinks {
+  background-color: #F5F6F7; }
+
+footer .wrapper {
+  width: 100%;
+  padding: 25px 0px;
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  /* flex-direction: row; */
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap; }
+  footer .wrapper a {
+    width: 35%;
+    margin: 3%;
+    display: block; }
+    footer .wrapper a button {
+      width: 100%;
+      background-color: #FEFFFF;
+      padding: 25px 50px;
+      font-size: 2.2rem;
+      border: 0;
+      box-shadow: 2px 2px 2px lightgrey; }
+
+footer .footerTags {
+  background-color: #FEFFFF; }
+  html[lang=ar] footer .footerTags {
+    text-align: right; }
+  footer .footerTags .wrapper {
+    width: 100%;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+        -ms-flex-flow: row wrap;
+            flex-flow: row wrap;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+    footer .footerTags .wrapper .list {
+      width: 25%; }
+      footer .footerTags .wrapper .list h3 {
+        text-transform: uppercase;
+        padding-bottom: 15px; }
+      footer .footerTags .wrapper .list ul {
+        margin: 0;
+        padding-left: 0; }
+        footer .footerTags .wrapper .list ul li {
+          padding-bottom: 10px; }
+
+footer .social {
+  background-color: #F5F6F7; }
+  footer .social .wrapper {
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around;
+    -webkit-align-items: center;
+        -ms-flex-align: center;
+                -ms-grid-row-align: center;
+            align-items: center; }
+    html[lang=ar] footer .social .wrapper {
+      -webkit-flex-direction: row-reverse;
+          -ms-flex-direction: row-reverse;
+              flex-direction: row-reverse; }
+    footer .social .wrapper .socialIcons, footer .social .wrapper .signup {
+      margin: 0;
+      padding-left: 0; }
+    footer .social .wrapper .socialIcons {
+      width: 20%; }
+      footer .social .wrapper .socialIcons li {
+        width: 25%;
+        float: left;
+        text-align: center; }
+    footer .social .wrapper .signup {
+      width: 75%; }
+      footer .social .wrapper .signup li {
+        float: left;
+        text-transform: uppercase;
+        letter-spacing: 0.2rem; }
+        html[lang=ar] footer .social .wrapper .signup li {
+          letter-spacing: normal;
+          float: right; }
+        footer .social .wrapper .signup li form input {
+          font-family: 'FontAwesome', 'Open Sans';
+          padding: 10px;
+          width: 100%; }
+          html[lang=ar] footer .social .wrapper .signup li form input {
+            text-align: center; }
+      footer .social .wrapper .signup li:first-child {
+        letter-spacing: 0.2rem;
+        -webkit-align-items: center;
+            -ms-flex-align: center;
+                    -ms-grid-row-align: center;
+                align-items: center;
+        width: 30%;
+        text-align: center;
+        padding: 12px 0; }
+      footer .social .wrapper .signup li:last-child {
+        width: 70%; }
+
+footer .copyright .wrapper {
+  padding: 0; }
+
+footer .copyright p {
+  font-size: 1.2rem; }
+
 img {
   max-width: 100%; }
 

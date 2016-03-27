@@ -11,7 +11,7 @@
 	<!-- beginning of header -->
 	<!-- Sticky Nav -->
 	<header>
-		<nav>
+		<nav class="clearfix">
 			<!-- left floated Nav -->
 			<div class="leftNav">
 				<ul>
@@ -31,7 +31,7 @@
 		</nav>
 		<div class="wrapper">
 			<!-- second Nav -->
-			<nav class="secondNav">
+			<nav class="secondNav clearfix">
 				<div class="logo">
 					<img src="Images/delphinus-logo.png" alt="">
 				</div>
@@ -55,7 +55,7 @@
 	<!-- Beginning of second header -->
 	<section class="secondHeader">
 		<div class="wrapper">
-			<ul>
+			<ul class="clearfix">
 				<li>الصفحة الرئيسية/ الاتصال بنا </li>
 				<li>الاتصال بنا</li>
 			</ul>
@@ -75,7 +75,7 @@
 						<li>طريق الدائري الخامس</li>
 						<li>الري، الكويت</li>
 						<li>
-							<ul>
+							<ul class="clearfix">
 								<li><i class="fa fa-facebook"></i></li>
 								<li><i class="fa fa-twitter"></i></li>
 								<li><i class="fa fa-instagram"></i></li>
@@ -86,12 +86,12 @@
 				</div>
 				<div class="theForms">
 					<h3>نرغب بأن نسمع ارائكم</h3>
-					<form action="text">
+					<form action="text" class="clearfix">
 						<input type="text" name="name" value="اسمك الكامل">
 						<input type="email" name="email" value="الإيميل">
 						<input type="text" name="website" value="الموقع الالكتروني الخاص بك">
 						<input type="text" name="title" value="لقبك">
-						<input type="text" name="review" value="">
+						<input type="text" name="review" value="نقدك">
 						<input type="submit" value="أرسل">
 					</form>
 				</div>
@@ -101,12 +101,14 @@
 	<!-- End of contact form section -->
 	<!-- beginning of footer section  -->
 	<footer>
-		<div class="wrapper">
-			<div class="shippingLinks">
+		<div class="shippingLinks clearfix">
+			<div class="wrapper">
 				<a href=""><button>الشحن مجانا</button></a>
 				<a href=""><button>الإرجاع مجانا</button></a>
 			</div>
-			<div class="footerTags">
+		</div>
+		<div class="footerTags">
+			<div class="wrapper">
 				<div class="list list1">
 					<h3>معلومات</h3>
 					<ul>
@@ -145,7 +147,9 @@
 					</ul>
 				</div>
 			</div>
-			<div class="social">
+		</div>	
+		<div class="social">
+			<div class="wrapper">
 				<ul class="socialIcons">
 					<li><i class="fa fa-facebook"></i></li>
 					<li><i class="fa fa-twitter"></i></li>
@@ -155,8 +159,13 @@
 				<ul class="signup">
 					<li>رسالتنا</li>
 						<!-- put arrow in after element in css -->
-					<li><form action=""><input type="email" name="email" value="أدخل بريدك الإلكتروني"></form></li>
+					<li><form action=""><input type="email" name="email" value="&#xf177; أدخل بريدك الإلكتروني"></form></li>
 				</ul>
+			</div>
+		</div>	
+		<div class="copyright">
+			<div class="wrapper">
+				<p>&copy; 2015 Delphinus</p>	
 			</div>
 		</div>	
 	</footer>
