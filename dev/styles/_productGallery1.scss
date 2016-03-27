@@ -1,19 +1,78 @@
 .productGallery1 {
 	.wrapper {
+		.collection {
+			display: flex;
+			flex-wrap: row wrap;
+			padding: 35px 0 0;
+		}
+		.collectionImage {
+			width: 75%;
+			img {
+				display: block;
+			}
+		}
+		.blockTitle {
+			color: white;
+			width: 25%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			p {
+				padding: 15px 0;
+			}
+		}
 		.blockTitle1 {
 			background-color: #C6DBA0;
+			margin-left: 35px;
 		}
 		.blockTitle2 {
 			background-color: #F1DB8B;
+			margin-right: 35px;
 		}
 		.blockTitle3 {
 			background-color: #A7C8E9;
+			margin-left: 35px;
 		}
 		.blockTitle4 {
 			background-color: #EA8C62;
+			margin-right: 35px;
 		}
 		.blockTitle5 {
 			background-color: #BCE5D4;
+			margin-left: 35px;
 		}
+	}
+	.brandLogos {
+		margin: 5% 0;
+		img {
+			// width: 100%;
+		}
+		.carousel-cell {
+			// width: 33%;
+		  // height: 160px;
+		  padding: 25px 50px;
+		}
+		.flickity-prev-next-button {
+		  width: 50px;
+		  height: 50px;
+		  background: transparent;
+		}
+		.flickity-prev-next-button:hover {
+		  background: transparent;
+		}
+		/* arrow color */
+		.flickity-prev-next-button .arrow {
+		  fill: black;
+		}
+		.flickity-prev-next-button.no-svg {
+		  color: black;
+		}
+		.flickity-prev-next-button.previous {
+		  left: -40px;
+		}
+		.flickity-prev-next-button.next {
+		  right: -40px;
+		}  
 	}
 }

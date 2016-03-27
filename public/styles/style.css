@@ -251,20 +251,177 @@ header .secondNav {
       html[lang=ar] .heroImage .wrapper .heroTitle h1 {
         letter-spacing: normal; }
 
+.productGallery1 .wrapper .collection {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: row wrap;
+      -ms-flex-wrap: row wrap;
+          flex-wrap: row wrap;
+  padding: 35px 0 0; }
+
+.productGallery1 .wrapper .collectionImage {
+  width: 75%; }
+  .productGallery1 .wrapper .collectionImage img {
+    display: block; }
+
+.productGallery1 .wrapper .blockTitle {
+  color: white;
+  width: 25%;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .productGallery1 .wrapper .blockTitle p {
+    padding: 15px 0; }
+
 .productGallery1 .wrapper .blockTitle1 {
-  background-color: #C6DBA0; }
+  background-color: #C6DBA0;
+  margin-left: 35px; }
 
 .productGallery1 .wrapper .blockTitle2 {
-  background-color: #F1DB8B; }
+  background-color: #F1DB8B;
+  margin-right: 35px; }
 
 .productGallery1 .wrapper .blockTitle3 {
-  background-color: #A7C8E9; }
+  background-color: #A7C8E9;
+  margin-left: 35px; }
 
 .productGallery1 .wrapper .blockTitle4 {
-  background-color: #EA8C62; }
+  background-color: #EA8C62;
+  margin-right: 35px; }
 
 .productGallery1 .wrapper .blockTitle5 {
-  background-color: #BCE5D4; }
+  background-color: #BCE5D4;
+  margin-left: 35px; }
+
+.productGallery1 .brandLogos {
+  margin: 5% 0;
+  /* arrow color */ }
+  .productGallery1 .brandLogos .carousel-cell {
+    padding: 25px 50px; }
+  .productGallery1 .brandLogos .flickity-prev-next-button {
+    width: 50px;
+    height: 50px;
+    background: transparent; }
+  .productGallery1 .brandLogos .flickity-prev-next-button:hover {
+    background: transparent; }
+  .productGallery1 .brandLogos .flickity-prev-next-button .arrow {
+    fill: black; }
+  .productGallery1 .brandLogos .flickity-prev-next-button.no-svg {
+    color: black; }
+  .productGallery1 .brandLogos .flickity-prev-next-button.previous {
+    left: -40px; }
+  .productGallery1 .brandLogos .flickity-prev-next-button.next {
+    right: -40px; }
+
+.productGallery .wrapper {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap; }
+  html[lang=ar] .productGallery .wrapper {
+    -webkit-flex-direction: row-reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    text-align: right; }
+  .productGallery .wrapper .tags {
+    width: 20%; }
+    .productGallery .wrapper .tags ul {
+      margin: 0;
+      padding-left: 0; }
+      html[lang=ar] .productGallery .wrapper .tags ul {
+        padding-right: 0; }
+    .productGallery .wrapper .tags form input[type="range"] {
+      margin: 15px 0;
+      /* width: 100%; */
+      outline: none; }
+  .productGallery .wrapper .theGallery {
+    width: 75%; }
+    .productGallery .wrapper .theGallery ul {
+      margin: 0;
+      padding-left: 0; }
+      html[lang=ar] .productGallery .wrapper .theGallery ul {
+        padding-right: 0; }
+    .productGallery .wrapper .theGallery .galleryNav {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: row;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-flex-wrap: wrap;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      html[lang=ar] .productGallery .wrapper .theGallery .galleryNav {
+        -webkit-flex-direction: row-reverse;
+            -ms-flex-direction: row-reverse;
+                flex-direction: row-reverse; }
+      .productGallery .wrapper .theGallery .galleryNav .galleryNavLeft {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        -webkit-justify-content: space-around;
+            -ms-flex-pack: distribute;
+                justify-content: space-around;
+        width: 35%; }
+        html[lang=ar] .productGallery .wrapper .theGallery .galleryNav .galleryNavLeft {
+          -webkit-flex-direction: row-reverse;
+              -ms-flex-direction: row-reverse;
+                  flex-direction: row-reverse; }
+      .productGallery .wrapper .theGallery .galleryNav .galleryNavRight {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-flex-wrap: wrap;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+        width: 43%;
+        -webkit-justify-content: space-around;
+            -ms-flex-pack: distribute;
+                justify-content: space-around; }
+        html[lang=ar] .productGallery .wrapper .theGallery .galleryNav .galleryNavRight {
+          -webkit-flex-direction: row-reverse;
+              -ms-flex-direction: row-reverse;
+                  flex-direction: row-reverse; }
+    .productGallery .wrapper .theGallery .galleryPic ul {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-flow: row wrap;
+          -ms-flex-flow: row wrap;
+              flex-flow: row wrap; }
+      .productGallery .wrapper .theGallery .galleryPic ul li {
+        width: 50%;
+        padding: 20px 25px 0 0; }
+        html[lang=ar] .productGallery .wrapper .theGallery .galleryPic ul li {
+          padding: 20px 0 0 25px; }
+    .productGallery .wrapper .theGallery .galleryPic .productStats {
+      text-align: center; }
+      .productGallery .wrapper .theGallery .galleryPic .productStats p {
+        color: grey; }
 
 .secondHeader {
   background-color: #F5F6F7;
