@@ -1,16 +1,45 @@
 @import 'normalize';
+
+@mixin rtl() {
+  @at-root html[lang=ar] & {
+    @content;
+  }
+}
+
 @import 'typography';
+@import 'header';
+@import 'productGallery1';
+@import 'footer';
 
 img {
 	max-width: 100%;
 }
 
+html, body { 
+  font-size: 62.5%;
+  font-family: 'Open Sans', sans-serif;
+}
+
 body {
 	color: #333;
+	@include rtl() {
+		// color: green;
+	}
 }
+
+// section {
+// 	max-width: 1200px;
+// }
 
 .wrapper {
 	max-width: 1060px;
 	width: 80%;
 	margin: 0 auto;
+}
+
+ul li, ol li {
+	padding-left: 0;
+	padding-right: 0;
+	margin: 0;
+	list-style-type: none;
 }

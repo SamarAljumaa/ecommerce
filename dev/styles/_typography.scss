@@ -1,8 +1,9 @@
 a {
-	color: #BA209B;
+	color: grey;
 	text-decoration: none;
+	font-size: 1.4rem;
 	&:hover {
-		color: #D424B1;
+		color: #333;
 	}
 }
 
@@ -10,10 +11,38 @@ a {
 
 p {
 	line-height: 1.5;
+	font-size: 1.4rem;
+}
+
+// headings
+
+h1 {
+	font-size: 3.4rem;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 2.6rem;
+}
+
+h3 {
+	font-size: 2rem;
+}
+
+h4 {
+	font-size: 1.6rem;
+}
+
+h1, h2 , h3, h4 {
+	margin: 0;
 }
 
 /*lists*/
 
 ul li, ol li {
-	padding: 3px;
+	font-size: 1.4rem;
+	padding-left: 0;
+	padding-right: 0;
+	margin: 0;
+	list-style-type: none;
 }
