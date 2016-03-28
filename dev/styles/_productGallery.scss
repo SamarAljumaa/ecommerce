@@ -1,4 +1,5 @@
 .productGallery {
+	padding-top: 50px;
 	.wrapper {
 		display: flex;
 		flex-flow: row wrap;
@@ -9,11 +10,20 @@
 		}
 		.tags {
 			width: 20%;
+			h3 {
+				margin-bottom: 5%;
+			}
 			ul {
 				margin: 0;
 				padding-left: 0;
+				margin-bottom: 5%;
+				padding-bottom: 20px;
+				border-bottom: solid 1px #c9c9c9;
 				@include rtl() {
 					padding-right: 0;
+				}
+				li {
+					line-height: 2.4rem;
 				}
 			}
 			form {
@@ -30,6 +40,11 @@
 		}
 		.theGallery {
 			width: 75%;
+			margin-left: 5%;
+			@include rtl() {
+				margin-left: 0;
+				margin-right: 5%;
+			}
 			ul {
 				margin: 0;
 				padding-left: 0;
@@ -85,6 +100,17 @@
 			    p {
 			    	color: grey;
 			    }
+				}
+				.bottomNav {
+					border-top: solid 1px #c9c9c9;
+					display: flex;
+					flex-direction: row;
+					justify-content: space-between;
+					padding-bottom: 50px;
+					li {
+						width: auto;
+						text-align: center;
+					}
 				}
 			}
 		}
