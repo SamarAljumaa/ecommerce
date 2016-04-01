@@ -134,7 +134,7 @@ footer {
 	footer .wrapper a {
 		width: 40%;
 	}
-	
+
 	footer .footerTags .wrapper {
 		display: block;
 		padding: 40px;
@@ -172,6 +172,7 @@ footer {
 
 		ul {
 			display: none;
+			margin-left: 6%;
 		}
 	}
 }
@@ -180,5 +181,11 @@ footer {
 	footer .wrapper a button {
 		padding: 25px 25px;
     font-size: 1.8rem;
+	}
+	footer .social .wrapper .signup li:first-child {
+		width: 35%;
+	}
+	footer .social .wrapper .signup li:last-child {
+		    width: 60%;
 	}
 }
