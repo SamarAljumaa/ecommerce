@@ -31,6 +31,15 @@ header {
 					@include rtl() {
 						// padding: 25px;
 					}
+					input {
+						font-family: 'FontAwesome', 'Open Sans';
+						// padding: 10px;
+						// width: 100%;
+						@include rtl() {
+							text-align: right;
+							// flex-flow: wrap;
+						}
+					}
 				}
 			}
 		}

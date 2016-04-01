@@ -118,3 +118,14 @@ footer {
 		}
 	}
 }
+
+@media (max-width: 1120px) {
+	footer .footerTags .wrapper {
+		max-width: 960px;
+		justify-content: center;
+		padding: 25px
+	}
+	footer .footerTags .wrapper .list {
+		// width: 20%;
+	}
+}
