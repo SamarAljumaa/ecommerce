@@ -1,11 +1,26 @@
+.mobileHeader {
+  display: none;
+}
+.mobileHeader .wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  /* align-content: center; */
+  align-items: center;
+}
+
+.logo2 {
+  width: 60%;
+  text-align: right;
+}
 .c-hamburger {
   display: block;
   position: relative;
   overflow: hidden;
   margin: 0;
   padding: 0;
-  width: 96px;
-  height: 96px;
+  width: 65px;
+  height: 60px;
   font-size: 0;
   text-indent: -9999px;
   appearance: none;
@@ -23,11 +38,11 @@
 .c-hamburger span {
   display: block;
   position: absolute;
-  top: 44px;
+  top: 30px;
   left: 18px;
   right: 18px;
-  height: 8px;
-  background: white;
+  height: 3px;
+  background: black;
 }
 
 .c-hamburger span::before,
@@ -36,21 +51,21 @@
   display: block;
   left: 0;
   width: 100%;
-  height: 8px;
-  background-color: #fff;
+  height: 3px;
+  background-color: black;
   content: "";
 }
 
 .c-hamburger span::before {
-  top: -20px;
+  top: -10px;
 }
 
 .c-hamburger span::after {
-  bottom: -20px;
+  bottom: -10px;
 }
 
 .c-hamburger--htx {
-  background-color: #ff3264;
+  background-color: transparent;
 }
 
 .c-hamburger--htx span {
@@ -73,7 +88,7 @@
 
 /* active state, i.e. menu open */
 .c-hamburger--htx.is-active {
-  background-color: #cb0032;
+  background-color:transparent;
 }
 
 .c-hamburger--htx.is-active span {
@@ -93,4 +108,58 @@
 .c-hamburger--htx.is-active span::before,
 .c-hamburger--htx.is-active span::after {
   transition-delay: 0s, 0.3s;
+}
+.mobileMenu .mainNav2 ul li {
+  padding-left: 0;
+  padding-right: 0;
+  margin: 0;
+  list-style-type: none;
+  text-transform: uppercase;
+  color: grey;
+  text-decoration: none;
+  font-size: 1.4rem;
+}
+
+.mobileMenu .mainNav2 ul li a {
+  color: grey;
+  text-decoration: none;
+  font-size: 1.4rem;
+  width: 100%;
+  display: block;
+}
+.mobileMenu .mainNav2 ul li form input {
+  font-family: 'FontAwesome', 'Open Sans';
+}
+.mobileMenu {
+  display: none;
+  height: 100vh;
+  background-color: rgba(242, 242, 242, 0.64);
+}
+.mainNav2 {
+  height: 100vh;
+}
+.mainNav2 ul {
+  height: calc(100vh - 81px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 0;
+  padding-left: 0;
+  text-align: center;
+}
+.mobileMenu .mainNav2 ul li {
+  cursor: pointer;
+  padding: 20px 0;
+}
+.mobileMenu .mainNav2 ul li:hover, li:focus {
+  background-color: lightblue;
+}
+.mobileMenu .mainNav2 ul li form input {
+  width: 35%;
+}
+
+@media (max-width: 768px ) {
+  .mobileHeader {
+    display: block;
+  }
 }

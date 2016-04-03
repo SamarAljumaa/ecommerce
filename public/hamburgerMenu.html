@@ -7,33 +7,51 @@
 	<title>Menu</title>
 </head>
 <body>
-	<div class="wrapper">
-		
-		<button class="c-hamburger c-hamburger--htx">
-		  <span>toggle menu</span>
-		</button>
-	</div>
+	<section class="mobileHeader">
+		<div class="wrapper clearfix">
+			<button class="c-hamburger c-hamburger--htx">
+			  <span>toggle menu</span>
+			</button>
+			<div class="logo2">
+				<img src="Images/delphinus-logo.png" alt="">
+			</div>
+			
+		</div>
+			<div class="mobileMenu">
+				<div class="mainNav2">
+					<ul class="clearfix">
+						<li><a href="index_ar.html">عربي</a></li>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="product.html">Products</a></li>
+						<li><a href="contact.html">Contact</a></li>
+						<li>$</li>
+						<li>Login</li>
+						<li>Wish list</li>
+						<li>my cart</li>
+						<!-- <li><i class="fa fa-search"></i></li> -->
+						<!-- if you want to change this to search form and want to enter the font awesome icon: &#xf002; -->
+						<li><form><input type="search" value="&#xf002;"></form></li>
+					</ul>
+				</div>
+			</div>
+	</section>	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 	<script>
-		(function() {
-
-	  "use strict";
-
-	  var toggles = document.querySelectorAll(".c-hamburger");
-
-	  for (var i = toggles.length - 1; i >= 0; i--) {
+	$(function(){
+		console.log("it works");
+		var toggles = document.querySelectorAll(".c-hamburger");
+		for (var i = toggles.length - 1; i >= 0; i--) {
 	    var toggle = toggles[i];
 	    toggleHandler(toggle);
 	  };
-
-	  function toggleHandler(toggle) {
-	    toggle.addEventListener( "click", function(e) {
-	      e.preventDefault();
-	      (this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
-	    });
-	  }
-
-	})();
+	  function toggleHandler(toggle){
+	  	toggle.addEventListener("click", function(e){
+	  		e.preventDefault();
+	  		(this.classList.contains("is-active") === true) ? this.classList.remove("is-active") : this.classList.add("is-active");
+	  		$('.mobileMenu').fadeToggle(),$(this).toggleClass('open');
+	  	});
+	  };
+	});
 	</script>
 </body>
 </html>
