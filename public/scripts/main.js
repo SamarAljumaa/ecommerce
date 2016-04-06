@@ -6,7 +6,7 @@ console.log(ohHey);
 
 // $('brandLogos').flickity()
 
-var app = {};
+// var app = {};
 
 $(function () {
 	var toggles = document.querySelectorAll(".c-hamburger");
@@ -34,5 +34,5 @@ $(function () {
 			$(this).next().slideDown();
 		}
 	});
-	app.init();
+	// app.init();
 });
